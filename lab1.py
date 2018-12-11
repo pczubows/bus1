@@ -7,40 +7,6 @@ from pathlib import Path
 from shutil import copyfile
 from random import randint
 
-"""
-Nakurwiasz sprawko 
-
-Najpierw napisz że robimy w pythonie bo jest super zajebista składnia i biblioteka i w ogóle (wpisz na wiki czemu taki
- zajebisty)
-
-Odpalasz sobie skrypcik na jeden z dwóch sposobów 
-1) Albo instalujeszy pythonka (ważne żebyś podczas instalacji zaznaczył że chcesz go dodać do zmiennej PATH) i 
-potem odpalasz to sobie w command linie komendą python lab1.py . Ważne żebyś był w tym katalogu i bogo.txt też był 
-w katalogu. Wcześniej musisz zainstalować na pythonku bibliotekę kryptograficzną w command linie poleceniem 
-pip install cryptography
-
-2) Ściągasz pycharma i odpalasz ten cały folder jak człowiek. Na dole masz konsole. Tak samo instalujesz cryptography
- jeżeli nie odpali ci się venv.
- 
- Najpierw masz teścik operacji wykonywany jakże intuicyjnie funkcją test_operations(a, b) a i b to jak każdy debil się 
- domyśli dwie liczby na których będą wykonywane działania . W pliku są juz prykładowe teściki. Pierdolnij screen funkcji 
- i wyników testów. Napisz że python jest dynamicznie typowany i wykrywa czy ma doczynienia z dużą liczbą i odpowiednio 
- dopasowuje procedury. Nie wiem tylko jak pokazać wyniki tych w chujw ielkich liczb bo one zajebują screen ale możesz
-    sprobować.
-    
- Potem masz testy szyfrowania i deszyfrowania za pomocą funkcji szyfrującej deszyfrującej a także funkcji która pierdoli
- coś w pliku. Analogicznie screeny funkcji jak i plików po zaszyforawniu odszyfrowaniu. Z błednym plikiem zaszyfrowanym 
- albo kluczem. Ciekawostka taka że jak był spierdolony plik w jedym miejscu to potem reszta pliku była dobrze odszyforwana. Jako 
- że nasza funkcja pierdoląca plik losuje punkt w kótrym go pierdoli jeżeli spierdoli jego końcówkę to można nawet odczytać.
- Z kluczem popsutym totalna chujnia. Dodatkowo daj anegdotke że biblioteka zawiere o wiele seksowniejszą implementację 
- szyforwania fermat ale była ona zbuyt dobra dla nas bo weryfikowała też date edycji pliku co nie pozwalałao nam pzetestować
- przypaku z popsutym plikiem. 
- 
- Pod koniec funkcja hashująca tez piękna funkcja test hash która korzysta genrate hash. Raz liczy dla dobrego potem 
- generuje popsuty ,liczy hash i wypierdala popsuty plik. Jak abrdzo chcesz mogę zmienić foramt wyświetlania się hashu bo
- drukuje się z xami bo hekasadecymalny. Screeny wszystkiego pierdut bajeczka pierdut. Jak coś to pisz
-   
-"""
 # roszerzone sito euklidesa
 def extended_euclidean(a, b):
     u, w, x, z = 1, a, 0, b
